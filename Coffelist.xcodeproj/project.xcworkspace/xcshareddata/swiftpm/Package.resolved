@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "activityview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwiftUI-Plus/ActivityView",
+      "state" : {
+        "revision" : "444ff3755e49b0284c12360b3db0d64d31f0c3f8",
+        "version" : "1.2.0"
+      }
+    },
+    {
+      "identity" : "swiftui-cached-async-image",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/lorenzofiamingo/swiftui-cached-async-image",
+      "state" : {
+        "revision" : "467a3d17479887943ab917a379e62bbaff60ac8a",
+        "version" : "2.1.1"
+      }
+    }
+  ],
+  "version" : 2
+}

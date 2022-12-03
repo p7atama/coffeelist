@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		BC97E47C29293CD1001BE2EA /* CoffelistApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97E47B29293CD1001BE2EA /* CoffelistApp.swift */; };
-		BC97E47E29293CD2001BE2EA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97E47D29293CD2001BE2EA /* ContentView.swift */; };
+		BC97E47E29293CD2001BE2EA /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97E47D29293CD2001BE2EA /* MainView.swift */; };
 		BC97E48029293CE0001BE2EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97E47F29293CE0001BE2EA /* Assets.xcassets */; };
 		BC97E48329293CE0001BE2EA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC97E48229293CE0001BE2EA /* Preview Assets.xcassets */; };
 		BC97E48E2929421F001BE2EA /* CoffeeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97E48D2929421F001BE2EA /* CoffeeModel.swift */; };
 		BC97E491292942DF001BE2EA /* CoffeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC97E490292942DF001BE2EA /* CoffeeListView.swift */; };
 		BCD5E5DC292A3B8C001CFBA0 /* CoffeeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD5E5DB292A3B8C001CFBA0 /* CoffeeDetailView.swift */; };
+		BCD6B563293BB20500C398E2 /* ActivityView in Frameworks */ = {isa = PBXBuildFile; productRef = BCD6B562293BB20500C398E2 /* ActivityView */; };
+		BCD6B566293BB69700C398E2 /* CachedAsyncImage in Frameworks */ = {isa = PBXBuildFile; productRef = BCD6B565293BB69700C398E2 /* CachedAsyncImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BC97E47829293CD1001BE2EA /* Coffelist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Coffelist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC97E47B29293CD1001BE2EA /* CoffelistApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffelistApp.swift; sourceTree = "<group>"; };
-		BC97E47D29293CD2001BE2EA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC97E47D29293CD2001BE2EA /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		BC97E47F29293CE0001BE2EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC97E48229293CE0001BE2EA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BC97E48D2929421F001BE2EA /* CoffeeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeModel.swift; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD6B563293BB20500C398E2 /* ActivityView in Frameworks */,
+				BCD6B566293BB69700C398E2 /* CachedAsyncImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,7 +64,7 @@
 				BC97E48F292942BE001BE2EA /* View */,
 				BC97E48C29293ED6001BE2EA /* Model */,
 				BC97E47B29293CD1001BE2EA /* CoffelistApp.swift */,
-				BC97E47D29293CD2001BE2EA /* ContentView.swift */,
+				BC97E47D29293CD2001BE2EA /* MainView.swift */,
 				BC97E47F29293CE0001BE2EA /* Assets.xcassets */,
 				BC97E48129293CE0001BE2EA /* Preview Content */,
 			);
@@ -108,6 +112,10 @@
 			dependencies = (
 			);
 			name = Coffelist;
+			packageProductDependencies = (
+				BCD6B562293BB20500C398E2 /* ActivityView */,
+				BCD6B565293BB69700C398E2 /* CachedAsyncImage */,
+			);
 			productName = Coffelist;
 			productReference = BC97E47829293CD1001BE2EA /* Coffelist.app */;
 			productType = "com.apple.product-type.application";
@@ -136,6 +144,10 @@
 				Base,
 			);
 			mainGroup = BC97E46F29293CD1001BE2EA;
+			packageReferences = (
+				BCD6B561293BB20500C398E2 /* XCRemoteSwiftPackageReference "ActivityView" */,
+				BCD6B564293BB69700C398E2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */,
+			);
 			productRefGroup = BC97E47929293CD1001BE2EA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -162,7 +174,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC97E47E29293CD2001BE2EA /* ContentView.swift in Sources */,
+				BC97E47E29293CD2001BE2EA /* MainView.swift in Sources */,
 				BC97E48E2929421F001BE2EA /* CoffeeModel.swift in Sources */,
 				BCD5E5DC292A3B8C001CFBA0 /* CoffeeDetailView.swift in Sources */,
 				BC97E491292942DF001BE2EA /* CoffeeListView.swift in Sources */,
@@ -367,6 +379,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BCD6B561293BB20500C398E2 /* XCRemoteSwiftPackageReference "ActivityView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUI-Plus/ActivityView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		BCD6B564293BB69700C398E2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/lorenzofiamingo/swiftui-cached-async-image";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BCD6B562293BB20500C398E2 /* ActivityView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD6B561293BB20500C398E2 /* XCRemoteSwiftPackageReference "ActivityView" */;
+			productName = ActivityView;
+		};
+		BCD6B565293BB69700C398E2 /* CachedAsyncImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCD6B564293BB69700C398E2 /* XCRemoteSwiftPackageReference "swiftui-cached-async-image" */;
+			productName = CachedAsyncImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BC97E47029293CD1001BE2EA /* Project object */;
 }
